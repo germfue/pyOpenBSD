@@ -29,7 +29,7 @@ import re
 import requests
 import unittest
 import os
-from pyOpenBSD import mirrors, Protocol
+from pyOpenBSD import mirrors, Protocol, Mirror
 
 _mirror_url = 'https://www.openbsd.org/ftp.html'
 _error_mirrors_updated = """To see differencies, run:
@@ -158,3 +158,12 @@ class MirrorTest(unittest.TestCase):
             response = os.system(cmd)
             self.assertTrue(response > 0,
                             msg="Reachable %s (%s)" % (hostname, mirror))
+
+    def test_repo(self):
+        url = 'http://mirrors.evowise.com/pub/OpenBSD/'
+        mirror_1 = Mirror(url)
+        mirror_2 = Mirror(url[0:-1])
+        osversion = '6.0'
+        arch = 'amd64'
+        self.assertEquals(mirror_1.pkg_repo(osversion, arch),
+                          mirror_2.pkg_repo(osversion, arch))

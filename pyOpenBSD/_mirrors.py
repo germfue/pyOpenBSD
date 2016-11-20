@@ -64,6 +64,16 @@ class Mirror(object):
     def __str__(self):
         return self.url
 
+    def pkg_repo(self, osversion, arch):
+        sep = '' if self.url.endswith('/') else '/'
+        format_url = "%(base_url)s%(sep)s%(osversion)s/packages/%(arch)s"
+        repo = format_url % {'base_url': self.url,
+                             'sep': sep,
+                             'osversion': osversion,
+                             'arch': arch
+                             }
+        return repo
+
 
 def _load_mirrors():
     result = {Protocol.any: [],
