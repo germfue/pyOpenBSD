@@ -13,8 +13,8 @@ For now pyOpenBSD provides mirror information only. Here there is a code
 snippet to show how to use it:
 
 ```python
-import pyOpenBSD import mirrors, Protocol
-print pyOpenBSD.mirrors[pyOpenBSD.Protocol.http]
+from pyOpenBSD import mirrors, Protocol
+print mirrors[Protocol.http]
 ```
 
 OpenBSD offers mirrors using 3 protocols:
@@ -22,3 +22,6 @@ OpenBSD offers mirrors using 3 protocols:
 * HTTP
 * FTP
 * rsync
+
+# License
+BSD 2-Clause License
