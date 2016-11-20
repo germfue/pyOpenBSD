@@ -94,3 +94,7 @@ include
 local
 *.swp
 tests/ftp.html.new
+Gemfile
+Gemfile.lock
+_config.yml
+_site/
