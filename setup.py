@@ -34,7 +34,7 @@ repositories, patch information, etc
 
 setup(
     name="pyOpenBSD",
-    version="0.0.1",
+    version="0.1.1",
     author="Germán Fuentes Capella",
     author_email="pyOpenBSD@gfc.33mail.com",
     description="Utilities to extract information from OpenBSD.org",
