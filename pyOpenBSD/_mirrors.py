@@ -78,6 +78,7 @@ def _load_mirrors():
         result[Protocol.any].append(mirror)
         result[mirror.protocol].append(mirror)
 
+    # return a tuple instead of a list. Once loaded, no changes are expected
     return {k: tuple(v) for (k, v) in result.iteritems()}
 
 mirrors = _load_mirrors()

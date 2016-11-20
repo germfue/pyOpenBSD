@@ -29,7 +29,7 @@ from setuptools import setup
 
 long_description = """
 Utilities for interacting with the OpenBSD website to extract package
-repositories, patches, etc
+repositories, patch information, etc
 """
 
 setup(

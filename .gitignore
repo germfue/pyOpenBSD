@@ -93,3 +93,4 @@ bin
 include
 local
 *.swp
+tests/ftp.html.new

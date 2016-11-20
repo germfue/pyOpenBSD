@@ -37,7 +37,6 @@ http://ftp5.eu.openbsd.org/ftp/pub/OpenBSD/
 http://ftp2.eu.openbsd.org/pub/OpenBSD/
 http://openbsd.c3sl.ufpr.br/pub/OpenBSD/
 http://mirrors.unb.br/pub/OpenBSD/
-http://mirror.telepoint.bg/OpenBSD/
 http://openbsd.ipacct.com/pub/OpenBSD/
 http://ftp.OpenBSD.org/pub/OpenBSD/
 http://openbsd.cs.toronto.edu/pub/OpenBSD/
