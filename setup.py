@@ -45,7 +45,7 @@ setup(
     test_suite='tests',
     long_description=long_description,
     classifiers=[
-        "Development Status :: 1 - Planning",
+        "Development Status :: 4 - Beta",
         "Topic :: System :: Systems Administration",
         "License :: OSI Approved :: BSD License",
         "Environment :: Console",
